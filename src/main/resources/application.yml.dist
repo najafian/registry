@@ -1,0 +1,10 @@
+server:
+  port: ${REGISTRY_DOCKER_PORT:8761}
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://admin:admin@172.17.0.1:${REGISTRY_DOCKER_PORT:8761}/eureka/
+
+

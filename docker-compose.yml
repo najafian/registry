@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  registry:
+    env_file: .env
+    build:
+      args:
+        REGISTRY_DOCKER_PORT: $REGISTRY_DOCKER_PORT
+      context: .
+    ports:
+      - "$REGISTRY_DOCKER_PORT:$REGISTRY_DOCKER_PORT"

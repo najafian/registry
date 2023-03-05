@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: native
+
+jwt:
+  secret: o2%d$LBKEm4Mnf$TF%QG%ZysTrv7nMe^x$i%etdHfPTtLCE5t6nx*ZmHvgtoQ$TGbnNMJaq@3aNdfQfM7HR8!3a8bw$b%P^A8wE7ReJsEYiaxd6&J2A#8vN3g^gYMg#2
+
+config:
+  userName: admin
+  password: admin
+info:
+  project:
+    version: #project.version#
+cron:
+  expression: '*/10 * * * * *'
